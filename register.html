@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width">
+
+<head>
+    <title>Fill the Form</title>
+    <style>
+        /* class selectror */
+        /* .impo{
+           color:blue;
+
+    } */
+        /* header{
+    background-color: rgb(89, 254, 83);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.956);
+    border-radius: 3rem;
+    } */
+
+
+        header::before {
+            content: "";
+            background: url('https://c4.wallpaperflare.com/wallpaper/246/99/675/texture-digital-art-pattern-artwork-wallpaper-preview.jpg');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20.5em;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        body {
+            background: url('https://cutewallpaper.org/23/gaming-laptop-wallpaper-4k/179347524.jpg') no-repeat center center/cover;
+            /* https://images8.alphacoders.com/703/703256.png' */
+            width: 100%;
+            height: 100%;
+            opacity: 0.96;
+            margin: 0px;
+        }
+
+        .navigation {
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+
+
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 23px;
+            /* border:1px dotted wheat; */
+        }
+
+        li>a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            text-shadow: 4px 4px 8px #0013a4;
+        }
+
+
+
+        footer {
+            background-color: rgb(255, 254, 184);
+            padding: 8px;
+            border: 2px solid rgb(255, 128, 128);
+        }
+
+        section {
+            height: 170px;
+            margin: 0px 2px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 4px 4px 4px #000000;
+
+        }
+
+        section h1 {
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px #FF0000;
+        }
+
+        .form {
+            display: grid;
+            grid-gap: 1rem;
+            margin: 0%;
+            overflow: unset;
+            border: 3px solid rgb(1, 1, 1);
+            padding: 3rem 0rem 3rem 0rem;
+            grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+
+        }
+
+        #div1 {
+            /* border: 2px solid red; */
+            /* width:24.8rem ; */
+            /* grid-area: div1; */
+            padding: 5rem 2rem 2rem 2rem;
+            color: white;
+            text-shadow: 2px 2px 3px blue;
+            line-height: 2rem;
+            font-size: 17px;
+        }
+
+        #div2 {
+            /* width:auto; */
+            /* grid-area: div2; */
+            background-color: rgb(52, 54, 54);
+            border-radius: 2rem;
+            box-shadow: -6px -6px 6px 1px #376b6b, 6px -6px 6px 1px #376b6b, -6px 6px 6px 1px #376b6b, 6px 6px 6px 1px #376b6b;
+        }
+
+        #div2 h2 {
+            text-align: center;
+            text-shadow: 2px 2px 8px rgb(61, 255, 155);
+
+
+        }
+
+        #div3 {
+            /* width: 24.2rem;; */
+            /* grid-area: div3; */
+            color: white;
+            text-shadow: 2px 2px 8px orange;
+            padding: 5rem 2rem 2rem 2rem;
+            /* border: 2px solid red; */
+            line-height: 2rem;
+            font-size: 17px;
+        }
+
+        .form div p b {
+            color: red;
+            text-shadow: 2px 2px 8px green;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            /* grid-area: div; */
+            background-color: black;
+            border-radius: 2rem;
+            color: rgb(233, 235, 237);
+            padding: 2rem 1rem 55px 4rem;
+            margin-bottom: 0%;
+            /* width: 40rem; */
+            box-shadow: 0px -7px 4px 3px rgb(27, 31, 31);
+
+            /* width:600px; */
+        }
+
+        form b {
+            cursor: pointer;
+            text-shadow: 2px 2px 8px #636363;
+        }
+
+        input {
+            height: 20px;
+            width: auto;
+            border: 2px block black;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            box-shadow: 1.4px 1.4px #ff3c3c;
+
+        }
+
+        #male,
+        #female,
+        #other {
+            box-shadow: none;
+        }
+
+
+        #last {
+            margin-top: 20px;
+            float: center;
+            padding-left: 170px;
+        }
+
+        #last input {
+            height: 30px;
+            box-shadow: 2px 2px #FF0000;
+
+        }
+
+
+        @media (min-width: 1400px) and (max-width:2000px) {
+            .form {
+                grid-template-columns: 1fr 2fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width:600px) {
+            .navigation {
+                padding: 0px;
+            }
+
+            .form {
+                padding: 0px;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<!--bgcolor="#00FFCC"-->
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item"><a href="http://127.0.0.1:5500/Projects/home%20page/Home%20page.html">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="http://127.0.0.1:5500/Projects/services/service.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <header><h2>INFORMATION FORM</h2></header> -->
+    <br><br>
+    <section>
+        <h1>GAMMING MENIA</h1>
+        <p>Hello players to ragister in the gamming mania kindly fill the form given below. plase make sure all given
+            informatiion are correct, for further information contact us </p>
+    </section>
+    <br>
+    <hr><br><br>
+    <div class="form">
+        <div id="div1">
+            <p>Video games have expanded beyond reflex-testing challenges throughout the years. Those who would like to
+                experience a story and actively participate in it go to video games as their way of immersion. A new
+                direction in storytelling where you can direct characters and play it out – some games will even let you
+                choose the outcomes for yourself.</p>
+            <p>Video games created a culture of their own. Characters that only few people were familiar suddenly gained
+                a wider audience. What was normally deemed as exclusive to a select audience has seeped through everyday
+                living. Our culture has taken many things from personalities that existed in the world of pixels. It
+                made many geeky things more acceptable.</p>
+        </div>
+
+        <div id="div2">
+            <h2>join us</h2>
+            <form action="">
+
+                <br>
+                <div>
+                    <label for="name"><b>NAME: &nbsp;</b></lable>
+                        <input type="text" name="my name" id="name" placeholder="enter name">
+                </div>
+                <br>
+                <div>
+                    <label for="Game"><b>Game NAME: &nbsp;</b></lable>
+                        <input type="text" name="game name" id="Game" placeholder="which game do u play">
+                </div>
+                <br>
+                <div>
+                    <label for="id"><b>Game I'D: &nbsp;</b></lable>
+                        <input type="text" name="id:" id="id" placeholder="enter your id">
+                </div>
+                <br>
+                <div>
+                    <label for="NUMBER"><b>MOBILE NUMBER: &nbsp;</b></lable>
+                        <input type="number" name="mobile number 1" id="NUMBER" placeholder="enter number 1"
+                            maxlength="10"> <input type="text" name="mobile number 2" placeholder="enter number 2"
+                            maxlength="10">
+                </div>
+                <br>
+                <div>
+                    <label for="email"><b>EMAIL: &nbsp;</b></lable>
+                        <input type="email" name="my email" id="email" placeholder="enter email">
+                </div>
+                <br>
+                <div> <b>GENDER:</b>
+                    <label>
+                        &nbsp; male
+                        <input type="radio" name="gender" id="male" value="male">
+                    </label>
+                    <label for="female">&nbsp; female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="other">&nbsp; other</label>
+                    <input type="radio" name="gender" id="other" value="other">
+                </div>
+                <br>
+                <div>
+                    <label for="nationality"><b>NATIONALITY: &nbsp;</b></lable>
+                        <select name="nationality" id="nationality">
+                            <option value="Indian">Indian</option>
+                            <option value="Foreigner">Foreigner</option>
+                        </select>
+                </div>
+                <br><br>
+                <div>
+                    <label>
+                        <b>STATE: &nbsp; </b>
+                        <select name="state">
+
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </label>
+                </div>
+                <br><br>
+                <div>
+                    <label for="CITY"><b>CITY: &nbsp;</b></lable>
+                        <select name="city" id="CITY">
+                            <option value="Delhi">Delhi</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Indore">Indore</option>
+                            <option valaue="Alahabad">Alahabad</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="surat">Surat</option>
+                            <option value="dhemaji">dhemaji</option>
+                            <option value="goa">goa</option>
+                            <option value="panna">panna</option>
+                            <option value="dindori">dindori</option>
+                            <option value="chennai">chennai</option>
+                            <option value="ahmedabab">ahmedabab</option>
+                            <option value="agra">agra</option>
+                            <option value="jaipur">jaipur</option>
+                            <option value="udaipur">udaipur</option>
+                            <option value="kochi">kochi</option>
+                            <option value="gwalior">gwalior</option>
+                            <option value="chandigarh">chandigarh</option>
+                            <option value="guwahati">guwahati</option>
+                        </select>
+                </div>
+                <br><br>
+                <div>
+                    <label for="PIN"><b>PIN CODE: &nbsp;</b></lable>
+                        <input type="text" name="pin code" id="PIN" placeholder="pincode" maxlength="6" size="6">
+                </div>
+                <br>
+                <div>
+                    <label for="ADD"><b>ADDRESS: &nbsp;</b></lable>
+                        <input type="text" name="address" id="ADD" placeholder="enter address">
+                </div>
+                <br>
+                <div>
+                    <label for="brow"><b>device: &nbsp;</b></lable>
+                        <input list="device" id="brow" placeholder="device">
+                        <datalist id="device">
+                            <option value="computer">
+                            <option value="laptop">
+                            <option value="phone">
+                        </datalist>
+                </div>
+                <div>
+                    <br>
+                    <label for="about"><b>about your game play and links</b></lable>
+                        <br><br>
+                        <textarea name=" about my self" row="40" cols="30" id="about"
+                            placeholder="your background, education, details, skills," id="textara"></textarea>
+                </div><br><br>
+
+                <div id="last">
+                    <input type="submit" value="submit now" onclick="alert('do u realy want to submit')">
+                    <input type="reset" value="reset" onclick="alert('do u realy want to reset')">
+                </div>
+            </form>
+        </div>
+
+        <div id="div3">
+            <p>“We’re not tools of the government or anyone else. Fighting was the only thing I was good at, but at
+                least I always fought for what I believed in.”<b> – Metal Gear Solid</b></p>
+            <p>“Our world, with its rules of causality, has trained us to be miserly with forgiveness. By forgiving too
+                readily, we can be badly hurt. But if we’ve learned from a mistake and become better for it, shouldn’t
+                we be rewarded for the learning, rather than punished for the mistake?”<b> – Braid</b></p>
+        </div>
+    </div>
+    <!-- <footer>
+<P class="impo"><input type="checkbox" checked> all the informatin given by me is correct to my knowledge and if any of the imformatiion 
+given by me is incorect then it is my responsibility</P>
+<div class="impo">
+    <input type="checkbox" checked>
+I accept all the term and condition and policy   
+</div>
+</footer> 
+<<br>
+ -->
+    <footer>
+        <fieldset>
+            <legend><em>Winston s. churchill</em></legend>
+            <pre>
+           success is not final;
+           failure is not fatal:
+        it is your courage to continue
+               that counts.
+ </pre>
+        </fieldset>
+    </footer><br><br>
+</body>
+
+</html>
