@@ -1,0 +1,279 @@
+body{
+    border: 2px solid red;
+    margin: 2px;
+    padding: 5px;
+}
+
+#body {
+    background-image: url("https://st3.depositphotos.com/1194063/15256/i/1600/depositphotos_152566010-stock-photo-fresh-salmon-fillet-with-aromatic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:7px;
+    border-radius: 18px;
+    box-shadow: 4px 4px 8px 2px#434343, -4px -4px 8px 2px#434343;
+}
+
+#nevigation {
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 0px;
+    background-color:rgba(58, 58, 58, 0.2);
+    box-shadow: 0px 4px 4px rgb(29, 29, 29);
+
+}
+
+.menu {
+    float: right;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 21px;
+    margin:10px 6px 0px 0px;
+    
+}
+
+.menu a {
+
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 200;
+    
+
+}
+
+.menu a:hover {
+    color: #fff;
+    
+}
+
+#exit {
+    background-color: red;
+    box-shadow: 2px 3x 5px 3px rgb(29, 29, 29);
+}
+
+#sign {
+    background-color: rgb(0, 0, 0);
+box-shadow: 2px 3px 7px 3px rgb(29, 29, 29);
+
+}
+
+#logo{
+margin: 8px 8px 0px 8px;
+float: left;
+cursor: pointer;
+display: inline;
+}
+#logo img{
+height:75px;
+margin: 2px 7px;
+
+}
+#logo img:hover{
+transform: scale(1.1);
+}
+#mammi {
+    float: left;
+    padding: 18px;
+    cursor: pointer;
+
+}
+#mammi a {
+    line-height: 60px;
+    font-family: 'Bungee Spice', cursive;
+    text-decoration: none;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #222222;
+    font-weight: 200;
+    padding: 14px;
+
+}
+.info{
+  padding:30px;
+ width: 80%;
+ text-align: center;
+ margin: auto;
+ font-family: monospace;
+ font-size: 1.4rem;
+ font-weight:100;
+ text-shadow: 2px 2px 8px#434343;
+}
+
+#container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+gap:50px;
+}
+
+.list {
+
+    overflow: auto;
+    /* border: 2px solid red; */
+    box-shadow:2px 2px 8px 3px #1515159e,-2px -2px 8px 5px #3d3d3da0;
+    border-radius: 19px;
+    width:250px;
+    background-color: rgba(78, 78, 78, 0.25);
+}
+
+.cont {
+    list-style-type: none;
+    overflow: hidden;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 1.5rem;
+padding: 15px;
+}
+.cont li h2{
+    color: white;
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+}
+
+.cont li {
+
+    cursor: pointer;
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(255, 247, 11);
+}
+
+.cont :hover {
+    text-decoration: underline;
+}
+.detail{
+    display: flex;
+    margin-top:20px;
+}
+.detail #det{
+margin:20px;
+color: #000000;
+padding:30px;
+width: 450px;
+/* border: 2px solid red; */
+ text-align: center;
+ font-size: 1.2vw;
+ font-weight:bolder;
+ text-shadow: 3px 3px 8px#323232;
+ box-shadow: 2px 0px 5px 1px rgb(234, 135, 135);
+}
+.detail #det p{
+    padding-top: 9px;
+    font-family: 'Cinzel', serif;
+    color: #000000;
+    text-shadow: 9px 9px 5px #9ec2ff,-9px -9px 5px #9ec2ff;
+}
+#pic{
+    width:80%;
+    box-shadow: -2px 0px 5px rgb(146, 188, 193);
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 1.2vw;
+ font-weight:bolder;
+ text-shadow: 3px 3px 8px#323232;
+}
+#pic div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap:30px; */
+}
+#pic div img{
+    height:250px;
+    width: 410px;
+    margin: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 0px 5px 1px rgb(234, 135, 135);
+}
+
+#fot{
+    opacity: 0.98;
+       height: 140px;
+      background-color: rgb(255, 227, 100);
+      float: bottom;
+      clear: both;
+       bottom: 1px;
+       box-shadow: 1px 2px 6px 3px #ed6618, -2px -2px 6px 3px #ed6618;
+       border-radius: 50px;
+      
+}
+
+@keyframes role {
+                   from{
+                           width: 27%;
+
+                   }   
+                   
+               to{
+                            width:70%;
+                   }         
+}
+
+#animate{
+
+ background-color: rgb(255, 58, 58);
+ height: 140px;
+ width:27%;
+ /* float: bottom;     */
+ animation: role 5s ease-in 1s infinite forwards;     /* animation: role 5s ease-in 2s alternate forwards; */
+ clear: both;
+ position: relative;
+ /* border-radius: 10px; */
+}
+#rot{
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    animation: rot 5s linear 1s infinite forwards;   
+    border-radius: 5px;
+    margin:20px;
+  padding:1rem 1rem 1rem 1.8rem;
+  font-size: 44px;
+    
+   
+}
+@keyframes rot {
+    25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    75%{rotate: 270deg;}
+    100%{rotate: 360deg;}
+    
+}
+#para {
+    display: inline-block;
+    margin: 0%;
+    font-size: 16px;
+}
+
+footer div{
+    background-color: rgb(243, 222, 197);
+    margin-top: 11px;
+    padding: 5px;
+    text-align: center;
+    color: #505050;
+    box-shadow:2px 2px rgb(173, 172, 172) ,-2px -2px rgb(173, 172, 172);
+    border-radius: 15px;
+}
+
+@media (max-width:600px){
+#container {
+   flex-direction:column;
+}
+.cont{
+width:400px;
+font-size: 2.5rem;
+text-align: center;
+}
+.list{
+    width:auto;
+}
+}
